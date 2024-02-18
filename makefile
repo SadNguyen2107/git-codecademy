@@ -13,10 +13,10 @@ SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 LIBS =
 
+# For Building Application
 .PHONY: directories
 .PHONY: run 
 .PHONY: clean
-
 all: directories $(BIN_DIR)/$(NAME)
 
 directories: $(OBJ_DIR) $(BIN_DIR)
