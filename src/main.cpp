@@ -1,16 +1,17 @@
 #include <iostream>
+#include <array>
 
-int main(int argc, char const *argv[])
+int main()
 {
-    std::cout << "Hello World" << std::endl;
+    std::array<int, 3> nums = {1, 23, 42};
 
-    std::cout << argc << std::endl;
-    if (argc >= 2)
+    try
     {
-        for (size_t index = 1; index < argc; index++)
-        {
-            std::cout << argv[index] << std::endl;
-        }
+        std::cout << nums.at(10) << std::endl;
+    }
+    catch (const std::exception &e)
+    {
+        std::cerr << e.what() << '\n';
     }
 
     return 0;
