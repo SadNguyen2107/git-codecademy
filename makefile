@@ -3,7 +3,7 @@ NAME = main
 
 # Command To Build, Clean, Make
 CXX = g++
-CXXFLAGS = -Wall -Wextra
+CXXFLAGS = -std=c++20 -Wall -Wextra
 
 SRC_DIR = src
 OBJ_DIR = build/obj
