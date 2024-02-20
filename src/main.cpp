@@ -2,6 +2,7 @@
 #include <vector>
 #include <format>
 #include <algorithm>
+#include <functional>
 
 void showNumberCount(std::vector<int> nums) // Time Complexity: O(nlogn)
 {
@@ -33,7 +34,13 @@ void showNumberCount(std::vector<int> nums) // Time Complexity: O(nlogn)
 int main()
 {
     std::vector<int> nums = {1, 2, 3, 2, 4, 4, 2, 4};
-    showNumberCount(nums);
+    // showNumberCount(nums);
+
+    std::function<int(int, int)> sum = [&nums](int num1, int num2) -> int {
+        return num1 + num2 + nums[1];
+    };
+
+    std::cout << sum(1,2) << std::endl;
 
     return 0;
 }
