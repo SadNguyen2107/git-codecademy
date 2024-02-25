@@ -44,5 +44,7 @@ int main()
 
     std::cout << "Hello World" << std::endl;
 
+    std::cout << "Hello World from SadNguyen" << std::endl;
+
     return 0;
 }
