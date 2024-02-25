@@ -42,5 +42,7 @@ int main()
 
     std::cout << sum(1,2) << std::endl;
 
+    std::cout << "New Branch" << std::endl;
+
     return 0;
 }
