@@ -42,5 +42,7 @@ int main()
 
     std::cout << sum(1,2) << std::endl;
 
+    std::cout << "Hello World from SadNguyen" << std::endl;
+
     return 0;
 }
